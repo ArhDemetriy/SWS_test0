@@ -18,11 +18,9 @@
         }
     }
     &__head{
-        color: var(--content__color-blur);
-        font-size: .7778rem;
-        font-weight: 400;
         text-align: left;
         &__item{
+            font-weight: inherit;
             height: var(--row_height);
             padding-left: 0.6667rem;
         }

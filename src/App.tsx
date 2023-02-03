@@ -6,9 +6,6 @@ function App() {
     <div className="App">
       <div className={styles['App__columns']}>
         <CustomTable />
-        {/* <CustomTreeView /> */}
-        {/* <Counter /> */}
-        {/* <CustomSelect /> */}
       </div>
     </div>
   );

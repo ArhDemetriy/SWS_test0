@@ -1,0 +1,90 @@
+.controls{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    // size __image element. default value, before onLoad
+    --ico_height: 0px;
+    --ico_width: 0px;
+    --lines_gap: 20px;
+
+    // lines
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__line{
+        border: 1px solid #C6C6C6;
+        &-input{
+            margin-left: var(--lines_gap);
+            &-first{
+                margin-left: 10px;
+            }
+            &-long{
+                height: calc(var(--row_height, 0px) + 2px);
+            }
+            &-short{
+                height: calc(var(--row_height, 0px) / 2);
+                align-self: flex-start;
+            }
+            &-invisible{
+                visibility: hidden;
+            }
+        }
+        &-dash{
+            width: calc(var(--lines_gap) - var(--ico_width) / 2);
+        }
+        &-output{
+            position: absolute;
+            height: calc(calc(var(--row_height, 0px) - var(--ico_height)) / 2 + 2px);
+            top: calc(var(--ico_height) / 2 - 1px);
+            left: calc(var(--ico_width) / 2);
+        }
+    }
+
+    // image
+    &__images{
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 5px;
+
+        &__background{
+            position: absolute;
+            background-color: #414144;
+
+            $padding: -6px;
+            left: $padding;
+            right: $padding;
+            top: $padding;
+            bottom: $padding;
+            border-radius: -$padding;
+
+            z-index: -1;
+        }
+        &__button_switch{
+            display: none;
+        }
+        &__main{
+        }
+        &__button{
+            display: flex;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: 0;
+            padding: 0;
+            background-color: transparent;
+            font-style: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            text-decoration: inherit;
+
+            &:disabled{
+                display: none;
+            }
+        }
+    }
+}

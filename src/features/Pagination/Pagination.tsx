@@ -17,7 +17,7 @@ interface PaginationProps {
     readonly select: MutableRefObject<readonly number[]>
 }
 
-export const Pagination: FC<PaginationProps> = p => {
+export const Pagination: FC<PaginationProps> = _ => {
     return <div>
         <PaginationItem caption="По проекту"/>
         <PaginationItem caption="Объекты"/>

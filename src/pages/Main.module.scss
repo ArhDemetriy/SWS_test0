@@ -1,6 +1,9 @@
 .main{
     display: grid;
-    &__header{}
+    grid-template-columns: 10% 1fr;
+    &__header{
+        grid-area: 1 / 1 / 1 / span 2;
+    }
     &__pagination{}
     &__table{}
 }

@@ -2,11 +2,23 @@ import { FC } from "react";
 import styles from './Pagination.module.scss';
 import page from "./ico/page.svg";
 
-const SELECT = 1
+const SELECT = 3
 
 const ITEMS = [
     "По проекту",
     "Объекты",
+    "РД",
+    "СМР",
+    "График",
+    "МиМ",
+    "Рабочие",
+    "Капвложения",
+    "Бюджет",
+    "Финансирование",
+    "Панорамы",
+    "Камеры",
+    "Поручения",
+    "Контрагенты",
 ]
 
 interface PaginationItemProps {

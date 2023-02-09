@@ -54,7 +54,7 @@
 
         &__background{
             position: absolute;
-            background-color: #414144;
+            background-color: var(--ui__color);
 
             $padding: -6px;
             left: $padding;

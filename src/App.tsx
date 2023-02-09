@@ -1,12 +1,10 @@
-import styles from './App.module.scss';
-import { CustomTable } from './features/CustomTable/CustomTable';
+import './App.scss';
+import { Main } from './pages/Main';
 
 function App() {
   return (
     <div className="App">
-      <div className={styles['App__columns']}>
-        <CustomTable />
-      </div>
+      <Main />
     </div>
   );
 }

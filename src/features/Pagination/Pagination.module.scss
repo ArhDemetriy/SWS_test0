@@ -1,0 +1,9 @@
+.pagination{
+    display: flex;
+    flex-direction: column;
+    &__item{
+        display: flex;
+        &__ico{}
+        &__caption{}
+    }
+}

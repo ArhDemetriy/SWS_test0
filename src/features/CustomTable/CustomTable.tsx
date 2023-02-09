@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { ColumnCaptions, TableCaption } from './TableConstants';
 import styles from './CustomTable.module.scss';
 import { Row } from './Row';
+import { EditableRow } from './EditableRow';
 
 interface CustomTableProps{
     caption?: boolean
@@ -27,7 +28,7 @@ export const CustomTable: FC<CustomTableProps> = p => {
             </tr>
         </thead>
         <tbody className={styles['table__body']}>
-            <Row
+            <EditableRow
                 requiredClass={styles['table__body__item'] || ''}
                 existOutputLine={true}
                 data={{
@@ -48,7 +49,7 @@ export const CustomTable: FC<CustomTableProps> = p => {
                     overheads: 2,
                     estimatedProfit: 3,
                 }} />
-            <Row
+            <EditableRow
                 requiredClass={styles['table__body__item'] || ''}
                 linesMask={['long', 'long']}
                 existOutputLine={false}
